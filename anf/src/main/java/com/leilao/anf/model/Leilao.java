@@ -19,14 +19,7 @@ public class Leilao {
 	
 	private String instFin;
 	 
-	public Leilao(Integer numeroLeilao, Integer loteProdutos, String instFin) {
-		this.numeroLeilao = numeroLeilao;
-		this.loteProdutos = loteProdutos;
-		this.instFin = instFin;
-	}
-
-
-
+	
 
 	private LocalDateTime data  = LocalDateTime.now();
 	private String endereco;
@@ -34,15 +27,18 @@ public class Leilao {
     // private Object tipo;
 
     public Leilao() {} 
-	
-	// public Leilao(Integer numeroLeilao,Integer loteProdutos, String instFin) {
-	// 	this.numeroLeilao = numeroLeilao;
-	// 	this.loteProdutos = loteProdutos;
-	// 	this.instFin = instFin;
-		
-	// }
+ 
+	 
+	public Leilao(Integer numeroLeilao,Integer loteProdutos, String instFin,  String endereco) {
+		this.numeroLeilao = numeroLeilao;
+		this.loteProdutos = loteProdutos;
+		//this.tipo = tipo;
+		this.instFin = instFin;
+		//this.data = data;
+		this.endereco = endereco;
+	}
 
-	public Integer getNumeroLeilao() {
+    public Integer getNumeroLeilao() {
 		return numeroLeilao;
 	}
 	public void setNumeroLeilao(Integer numeroLeilao) {

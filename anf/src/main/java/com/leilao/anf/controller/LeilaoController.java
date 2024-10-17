@@ -38,8 +38,8 @@ public class LeilaoController {
     @PostMapping
 	@Transactional
 	public void cadastrar(@RequestBody   LeilaoForm form, UriComponentsBuilder uriBuilder) {
-		LeilaoForm leilao = new LeilaoForm();
-		leilaoRepository.save(form.converter());
+		Leilao leilao = form.converter();
+		leilaoRepository.save(leilao);
 		
 		// URI uri = uriBuilder.path("/leilao/{id}").buildAndExpand(leilao.getId()).toUri();
 		//   ResponseEntity.created(uri).body(new LeilaoDto(leilao));

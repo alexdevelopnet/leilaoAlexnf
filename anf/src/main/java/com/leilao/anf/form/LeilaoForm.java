@@ -37,6 +37,6 @@ public class LeilaoForm {
     }
 
 	 public Leilao converter(){
-        return new Leilao(this.numeroLeilao, this.loteProdutos, this.instFin);
+        return new Leilao();
      }
 }
