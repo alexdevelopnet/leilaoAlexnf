@@ -12,11 +12,11 @@ import jakarta.persistence.Id;
 public class Leilao {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
- @Column(nullable = true)
+ @Column(nullable = true ,name="numeroLeilao")
     private Integer numeroLeilao;
-	@Column(nullable = true)
+	@Column(nullable = true ,name="loteProdutos")
 	private Integer loteProdutos;
-	
+	@Column(nullable = true ,name="instFin")
 	private String instFin;
 	 
 	

@@ -36,7 +36,12 @@ public class LeilaoForm {
         this.instFin = instFin;
     }
 
-	 public Leilao converter(){
-        return new Leilao();
-     }
+    public Leilao converter() {
+        Leilao leilao = new Leilao();
+        leilao.setNumeroLeilao(numeroLeilao); 
+        leilao.setLoteProdutos(loteProdutos); 
+        leilao.setInstFin(instFin);
+         
+        return leilao;
+    }
 }
